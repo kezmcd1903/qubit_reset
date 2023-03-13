@@ -56,11 +56,11 @@ temperature = T*0.1309 # 1/(ps kB)
 init_st = up_density_matrix
 
 # TEMPO parameters
-dt=0.2
+dt=0.02
 dkmax=200 #200
-epsrel=10**(-6)
+epsrel=10**(-8)
 # duration (ps)
-dur = 20
+dur = 0.04
 
 # Time steps for Master Equation
 dtME = 1#0.05
