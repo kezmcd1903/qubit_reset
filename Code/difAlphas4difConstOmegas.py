@@ -60,7 +60,7 @@ dt=0.02
 dkmax=200 #200
 epsrel=10**(-8)
 # duration (ps)
-dur = 4
+dur = 1
 
 # Time steps for Master Equation
 dtME = 1#0.05
@@ -137,6 +137,8 @@ correlations = oqupy.PowerLawSD(alpha=alpha,
                                 temperature=(temperature))
 
 bath = oqupy.Bath(sigma_x, correlations)
+
+oqupy.util.ProgressSimple(max_value=dur/dt)
 
 #############
 process_tensor = oqupy.pt_tempo_compute(bath=bath,
