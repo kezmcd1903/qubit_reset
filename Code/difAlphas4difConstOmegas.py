@@ -26,7 +26,7 @@ import ipyparallel as ipp
 
 start = timeit.default_timer()
 
-cluster = ipp.Cluster(n=18)
+cluster = ipp.Cluster(n=5)
 cluster
 
 
@@ -60,7 +60,7 @@ dt=0.2
 dkmax=200 #200
 epsrel=10**(-8)
 # duration (ps)
-dur = 1.2
+dur = 20
 
 # Time steps for Master Equation
 dtME = 1#0.05
