@@ -60,7 +60,7 @@ dt=0.02
 dkmax=200 #200
 epsrel=10**(-8)
 # duration (ps)
-dur = 0.04
+dur = 1.6
 
 # Time steps for Master Equation
 dtME = 1#0.05
