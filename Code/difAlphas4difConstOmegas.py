@@ -104,7 +104,7 @@ plt.ylabel(r"$J(\Omega) \; (\mathrm{ps}^{-1})$")
 plt.legend()
 #plt.ylim([0, Omega[0]+0.1])
 # Save plots
-desired_folder = 'Plots'
+desired_folder = '/work/d422/d422/kieran_mcdowall/qubit_reset/Plots'
 file_name = 'Spect&Om_constOm='+str(Omega)+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'.pdf'
 full_path = os.path.join(desired_folder, file_name)
@@ -112,7 +112,7 @@ plt.savefig(full_path,bbox_inches="tight")
 plt.show()
 
 # Save
-desired_folder_data = 'PlotData'
+desired_folder_data = '/work/d422/d422/kieran_mcdowall/qubit_reset/PlotData'
 
 file_name_J = 'J='+str(Omega[0])+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'.txt'
@@ -147,7 +147,7 @@ process_tensor = oqupy.pt_tempo_compute(bath=bath,
                                        parameters=tempo_parameters)
 
 ###### Save PT ######## Doesn't work if already saved
-desired_folder_PT = 'process_tensor/'
+desired_folder_PT = '/work/d422/d422/kieran_mcdowall/qubit_reset/process_tensor'
 
 file_name_PT = 'alpha='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
    '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'_PT.txt'
@@ -180,7 +180,7 @@ dynamics = oqupy.compute_dynamics(process_tensor=process_tensor,
 t0, s_z0 = dynamics.expectations(sigma_z, real=True)
 
 # Save
-desired_folder_data = 'PlotData'
+desired_folder_data = '/work/d422/d422/kieran_mcdowall/qubit_reset/PlotData'
 
 file_name_t = 'PltDat_constOm='+str(Omega[0])+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'_Time.txt'
@@ -251,7 +251,7 @@ dynamics = oqupy.compute_dynamics(process_tensor=process_tensor,
 t1, s_z1 = dynamics.expectations(sigma_z, real=True)
 
 # Save
-desired_folder_data = 'PlotData'
+desired_folder_data = '/work/d422/d422/kieran_mcdowall/qubit_reset/PlotData'
 
 file_name_t = 'PltDat_constOm='+str(Omega[1])+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'_Time.txt'
@@ -322,7 +322,7 @@ dynamics = oqupy.compute_dynamics(process_tensor=process_tensor,
 t2, s_z2 = dynamics.expectations(sigma_z, real=True)
 
 # Save
-desired_folder_data = 'PlotData'
+desired_folder_data = '/work/d422/d422/kieran_mcdowall/qubit_reset/PlotData'
 
 file_name_t = 'PltDat_constOm='+str(Omega[2])+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'_Time.txt'
@@ -394,7 +394,7 @@ t3, s_z3 = dynamics.expectations(sigma_z, real=True)
 
 
 # Save
-desired_folder_data = 'PlotData'
+desired_folder_data = '/work/d422/d422/kieran_mcdowall/qubit_reset/PlotData'
 
 file_name_t = 'PltDat_constOm='+str(Omega[3])+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'_Time.txt'
@@ -464,7 +464,7 @@ plt.ylabel(r'$\langle\sigma_z\rangle$')
 plt.legend()
 plt.grid()
 
-desired_folder = 'Plots'
+desired_folder = '/work/d422/d422/kieran_mcdowall/qubit_reset/Plots'
 file_name = 'constOmsTEMPO='+str(Omega)+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'.pdf'
 full_path = os.path.join(desired_folder, file_name)
@@ -489,7 +489,7 @@ plt.grid(which='both')
 plt.ylim([-1,-0.7])
 plt.xlim([dur/2, dur])
 
-desired_folder = 'Plots'
+desired_folder = '/work/d422/d422/kieran_mcdowall/qubit_reset/Plots'
 file_name = 'constOmsTEMPOzoom='+str(Omega)+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'.pdf'
 full_path = os.path.join(desired_folder, file_name)
@@ -554,7 +554,7 @@ plt.legend()
 plt.grid()
 
 
-desired_folder = 'Plots'
+desired_folder = '/work/d422/d422/kieran_mcdowall/qubit_reset/Plots'
 file_name = 'constOmsTEMPOft='+str(Omega)+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'.pdf'
 full_path = os.path.join(desired_folder, file_name)
@@ -579,7 +579,7 @@ plt.legend()
 plt.minorticks_on()
 plt.grid(which='both')
 
-desired_folder = 'Plots'
+desired_folder = '/work/d422/d422/kieran_mcdowall/qubit_reset/Plots'
 file_name = 'FOMs='+str(Omega)+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'.pdf'
 full_path = os.path.join(desired_folder, file_name)
@@ -606,7 +606,7 @@ plt.grid(which='both')
 plt.ylim([92,100])
 plt.xlim([dur/2, dur])
 
-desired_folder = 'Plots'
+desired_folder = '/work/d422/d422/kieran_mcdowall/qubit_reset/Plots'
 file_name = 'FOMsZm='+str(Omega)+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'.pdf'
 full_path = os.path.join(desired_folder, file_name)
@@ -629,7 +629,7 @@ plt.ylabel(r'$\langle\sigma_z\rangle$')
 plt.legend()
 plt.grid()
 
-desired_folder = 'Plots'
+desired_folder = '/work/d422/d422/kieran_mcdowall/qubit_reset/Plots'
 file_name = 'constOmsQME='+str(Omega)+'a='+str(alpha)+'_T='+str(T)+'_dt='+str(dt)+\
     '_dkmax='+str(dkmax)+'_epsrel='+str(epsrel)+'_dur='+str(dur)+'.pdf'
 full_path = os.path.join(desired_folder, file_name)
