@@ -58,7 +58,7 @@ init_st = up_density_matrix
 # TEMPO parameters
 dt=0.2
 dkmax=200 #200
-epsrel=10**(-8)
+epsrel=10**(-6)
 # duration (ps)
 dur = 20
 
