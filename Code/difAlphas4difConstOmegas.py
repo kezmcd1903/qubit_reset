@@ -26,7 +26,7 @@ import ipyparallel as ipp
 
 start = timeit.default_timer()
 
-cluster = ipp.Cluster(n=12)
+cluster = ipp.Cluster(n=18)
 cluster
 
 
