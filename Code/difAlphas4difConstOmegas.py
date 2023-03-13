@@ -138,7 +138,7 @@ correlations = oqupy.PowerLawSD(alpha=alpha,
 
 bath = oqupy.Bath(sigma_x, correlations)
 
-oqupy.util.ProgressSimple(max_value=dur/dt)
+
 
 #############
 process_tensor = oqupy.pt_tempo_compute(bath=bath,
