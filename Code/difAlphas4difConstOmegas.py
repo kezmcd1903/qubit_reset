@@ -56,9 +56,9 @@ temperature = T*0.1309 # 1/(ps kB)
 init_st = up_density_matrix
 
 # TEMPO parameters
-dt=0.01
-dkmax=400 #200
-epsrel=10**(-7.2)
+dt=0.005
+dkmax=300 #200
+epsrel=10**(-7)
 # duration (ps)
 dur = 400
 
