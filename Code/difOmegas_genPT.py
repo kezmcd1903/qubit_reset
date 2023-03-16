@@ -45,7 +45,7 @@ mixed_density_matrix = oqupy.operators.spin_dm("mixed")
 # Pick System parameters
 Omega = [1,1.5,2,2.5]
 omega_cutoff = 5.0
-alpha = 0.001
+alpha = 1
 # Temperature in kelvin
 T = 0 # K
 # Temperature in units of 1/(ps kB)
@@ -56,11 +56,11 @@ temperature = T*0.1309 # 1/(ps kB)
 init_st = up_density_matrix
 
 # TEMPO parameters
-dt=0.005
-dkmax=350 #200
-epsrel=10**(-7.1)
+dt=0.05
+dkmax=200 #200
+epsrel=10**(-6)
 # duration (ps)
-dur = 400
+dur = 50
 
 # Time steps for Master Equation
 dtME = 1#0.05
