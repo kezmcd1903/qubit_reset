@@ -1,5 +1,5 @@
-# qubit_reset
-Optimising Qubit Reset in Open Quantum Systems
+# Optimising Qubit Reset in Open Quantum Systems
+
 
 This README file describes the general file structure and also serves as a bit of documentation.
 
