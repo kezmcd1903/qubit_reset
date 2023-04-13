@@ -55,7 +55,3 @@ Where select data produced in difOmegas.py can be stored and used for the plots 
 
 ## Tutorial
 ### Brief tutorial of .
-
-Dataset CSVs are produced using /Preprocessing/prepocessing.py (need to specify where the root file is that you want to convert).
-The NN is then built, trained and tested in /PyTorch_NN/TrainNN.py where a trained model is also output (this model can then be used
-to make predictions on a new dataset).
